@@ -31,19 +31,20 @@ namespace MyApp.Controllers
         [HttpGet(Name = "SynonymsOfRandomWord")]
         public async Task<SynonymsResponse> Get()
         {
+            SynonymsResponse response = new();
             var word = GetRandomWord(words);
             HttpResponseMessage retrievedData = await _synonymsService.GetSynonymsAsync(word);
             var retrievedSynonyms = await retrievedData.Content.ReadFromJsonAsync<SynonymsData>();
-            SynonymsResponse response = new();
             response.StatusCode = retrievedData.StatusCode;
-            response.Data = retrievedSynonyms;
             try
             {
+                //throw new HttpRequestException();
                 response.Message = $"Wrong retrivement of data. Word : {word}";
                 retrievedData.EnsureSuccessStatusCode();
                 if (retrievedData.IsSuccessStatusCode)
                 {
                     response.Message = $"Successful retrivement of data. Word : {word}";
+                    response.Data = retrievedSynonyms;
                     return response;
                 }
                 return response;
@@ -59,11 +60,10 @@ namespace MyApp.Controllers
         [HttpPost(Name = "SynonymsOfWord")]
         public async Task<SynonymsResponse> Post([FromQuery] string word)
         {
+            SynonymsResponse response = new();
             HttpResponseMessage retrievedData = await _synonymsService.GetSynonymsAsync(word);
             var retrievedSynonyms = await retrievedData.Content.ReadFromJsonAsync<SynonymsData>();
-            SynonymsResponse response = new();
             response.StatusCode = retrievedData.StatusCode;
-            response.Data = retrievedSynonyms;
             try
             {
                 response.Message = $"Wrong retrivement of data. Word : {word}";
@@ -71,6 +71,7 @@ namespace MyApp.Controllers
                 if (retrievedData.IsSuccessStatusCode)
                 {
                     response.Message = $"Successful retrivement of data. Word : {word}";
+                    response.Data = retrievedSynonyms;
                     return response;
                 }
                 return response;
@@ -80,6 +81,7 @@ namespace MyApp.Controllers
                 response.Message = $"Failed to retrieve data. Word : {word}";
                 response.StatusCode = HttpStatusCode.InternalServerError;
                 Console.WriteLine($"Error fetching data from API: {ex.Message}");
+                BadRequest("The request body cannot be null.");
                 return response;
             }
         }

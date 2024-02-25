@@ -30,3 +30,4 @@ D:\University\Adaptive Web\Proj\MyApp\obj\Debug\net8.0\refint\MyApp.dll
 D:\University\Adaptive Web\Proj\MyApp\obj\Debug\net8.0\MyApp.pdb
 D:\University\Adaptive Web\Proj\MyApp\obj\Debug\net8.0\MyApp.genruntimeconfig.cache
 D:\University\Adaptive Web\Proj\MyApp\obj\Debug\net8.0\ref\MyApp.dll
+D:\University\Adaptive Web\Proj\MyApp\obj\Debug\net8.0\MyApp.sourcelink.json
