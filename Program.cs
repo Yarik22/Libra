@@ -1,5 +1,6 @@
 
-using MyApp.Services;
+using MyApp.Services.ApiClient;
+using MyApp.Services.WordsService;
 
 namespace MyApp
 {
@@ -10,7 +11,8 @@ namespace MyApp
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddHttpClient();
             builder.Services.AddCors();
-            builder.Services.AddScoped<ISynonymsService, SynonymsService>();
+            builder.Services.AddScoped<IApiClient,ApiClient>()
+                .AddScoped<IWordsService, WordsService>();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
