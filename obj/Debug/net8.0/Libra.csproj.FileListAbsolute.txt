@@ -148,3 +148,5 @@ D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Settings.Configur
 D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+D:\University\Adaptive Web\Proj\Libra\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
