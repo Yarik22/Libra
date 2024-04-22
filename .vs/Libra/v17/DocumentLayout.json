@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\Adaptive Web\\Proj\\Libra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\currency\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:services\\currency\\currencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\currencyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A832C2E7-3633-40E6-9B59-D6C429498F3B}|Libra.csproj|solutionrelative:currencyhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-22T20:55:29.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CurrencyHub.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\CurrencyHub.cs",
+              "RelativeDocumentMoniker": "CurrencyHub.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\CurrencyHub.cs",
+              "RelativeToolTip": "CurrencyHub.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAtwBEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T20:39:45.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T20:25:00.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CurrencyService.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Currency\\CurrencyService.cs",
+              "RelativeDocumentMoniker": "Services\\Currency\\CurrencyService.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Currency\\CurrencyService.cs",
+              "RelativeToolTip": "Services\\Currency\\CurrencyService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T19:05:14.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T18:49:12.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T18:45:58.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
