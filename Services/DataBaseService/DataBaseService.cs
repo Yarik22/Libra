@@ -1,11 +1,11 @@
-﻿using Libra.Models;
+﻿using k8s.KubeConfigModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Libra.Services.DataBaseService
 {
-    public class DataBaseService: DbContext
+    public class AppDbContext : DbContext
     {
-        public DataBaseService(DbContextOptions<DataBaseService> options):base (options)
+        public AppDbContext(DbContextOptions<AppDbContext> options):base (options)
         {
             
         }

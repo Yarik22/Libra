@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\Adaptive Web\\Proj\\Libra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\page_availability.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:page_availability.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\background\\notificationbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:services\\background\\notificationbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\background\\databasenotificationservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:services\\background\\databasenotificationservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\background\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:services\\background\\externalapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:services\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|d:\\university\\adaptive web\\proj\\libra\\services\\databaseservice\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{701155D4-7BF3-4F10-A150-005FC762E8C4}|Libra.csproj|solutionrelative:services\\databaseservice\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "page_availability.txt",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\page_availability.txt",
+              "RelativeDocumentMoniker": "page_availability.txt",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\page_availability.txt",
+              "RelativeToolTip": "page_availability.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-28T16:03:33.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Hubs\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "Services\\Hubs\\NotificationHub.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Hubs\\NotificationHub.cs",
+              "RelativeToolTip": "Services\\Hubs\\NotificationHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:59:58.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotificationBackgroundService.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\NotificationBackgroundService.cs",
+              "RelativeDocumentMoniker": "Services\\Background\\NotificationBackgroundService.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\NotificationBackgroundService.cs",
+              "RelativeToolTip": "Services\\Background\\NotificationBackgroundService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:59:04.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExternalApiService.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\ExternalApiService.cs",
+              "RelativeDocumentMoniker": "Services\\Background\\ExternalApiService.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\ExternalApiService.cs",
+              "RelativeToolTip": "Services\\Background\\ExternalApiService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwB4AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:37:04.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAAALAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:34:21.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataBaseService.cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\DataBaseService\\DataBaseService.cs",
+              "RelativeDocumentMoniker": "Services\\DataBaseService\\DataBaseService.cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\DataBaseService\\DataBaseService.cs",
+              "RelativeToolTip": "Services\\DataBaseService\\DataBaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:17:25.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseNotificationService .cs",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\DatabaseNotificationService .cs",
+              "RelativeDocumentMoniker": "Services\\Background\\DatabaseNotificationService .cs",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\Services\\Background\\DatabaseNotificationService .cs",
+              "RelativeToolTip": "Services\\Background\\DatabaseNotificationService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T15:16:10.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\University\\Adaptive Web\\Proj\\Libra\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\University\\Adaptive Web\\Proj\\Libra\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-28T15:07:11.238Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

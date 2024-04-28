@@ -1,10 +1,14 @@
 using HealthChecks.UI.Client;
+using k8s.KubeConfigModels;
 using Libra.Services.ApiClient;
+using Libra.Services.Background;
 using Libra.Services.DataBaseService;
 using Libra.Services.DictionaryService;
 using Libra.Services.HealthChecker;
+using Libra.Services.Hubs;
 using Libra.Services.JokesService;
 using Libra.Services.RandomDataService;
+using Libra.Services.SmtpEmailSender;
 using Libra.Services.UserService;
 using Libra.Services.WordsService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -13,6 +17,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Quartz;
+using System.Configuration;
 using System.Text;
 
 namespace Libra
@@ -23,21 +29,28 @@ namespace Libra
         {
             var versions = new[] { "v1.1", "v1.2", "v1.3", "v2.1" };
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddDbContext<DataBaseService>(options => options
+            builder.Services.AddDbContext<AppDbContext>(options => options
             .UseNpgsql(
                     builder.Configuration.GetConnectionString("DefaultConnection")
                     ));
             builder.Services.AddHttpClient();
+            builder.Services.AddMemoryCache();
+            builder.Services.AddSignalR();
+            builder.Services
+                .AddHostedService<PageAvailabilityService>()
+                .AddHostedService<ExternalApiService>()
+                .AddHostedService<DatabaseNotificationService>();
             builder.Services.AddCors();
             builder.Services.AddHealthChecks()
                 .AddTypeActivatedCheck<UserHealthCheck>("user_health_check", args: new object[] { "Token type - JWT Bearer" })
-                .AddDbContextCheck<DataBaseService>("database_health_check");
+                .AddDbContextCheck<AppDbContext>("database_health_check");
             builder.Services
                 .AddSingleton<IRandomDataService, RandomDataService>()
                 .AddSingleton<IUserService, UserService>()           // Сервіс додан як AddSingleton, адже сервіс повинен бути єдиним для усіх користувачів застосунку
                 .AddSingleton<IApiClient, ApiClient>()               // Сервіс виступає в ролі методів для взаємодії із HttpClient, не передбачається, що методи повинні змінюватися, тому для роботи із єдиним об'єктом сервіса використовується AddSingleton
                 .AddSingleton<IWordsService, WordsService>()        // Сервіс виступає в ролі зберігання єдиного списку слів та методів взаємодії із ним. Для роботи із єдиним об'єктом сервіса використовується AddSingleton
                 .AddSingleton<IJokesService, JokesService>()        // Сервіс виступає в ролі зберігання єдиного списку жартів та методів взаємодії із ним. Для роботи із єдиним об'єктом сервіса використовується AddSingleton
+                .AddSingleton<IEmailSender, SmtpEmailSender>()
                 .AddScoped<IDictionaryService, DictionaryService>();// Сервіс використовує дані іншого сервіса, який може змінювати свій стан. Для реєстрації цих змін використовується AddScoped
             builder.Services.AddControllers();
             builder.Services.AddHealthChecksUI(
@@ -58,6 +71,18 @@ namespace Libra
                 options.SubstituteApiVersionInUrl = true;
             });
 
+            builder.Services.AddQuartz(
+                q =>
+                {
+                    q.UseMicrosoftDependencyInjectionJobFactory();
+
+                    q.AddJob<EmailSendingJob> (j => j.WithIdentity("emailSendingJob"));
+
+                    q.AddTrigger(t => t
+                        .ForJob("emailSendingJob")
+                        .WithIdentity("emailSendingTrigger")
+                        .WithSimpleSchedule(s => s.WithInterval(TimeSpan.FromSeconds(30)).RepeatForever()));
+                });
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
@@ -145,6 +170,12 @@ namespace Libra
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapHub<NotificationHub>("/notificationHub");
+            });
 
             app.MapControllers();
 
