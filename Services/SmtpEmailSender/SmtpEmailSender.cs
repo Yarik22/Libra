@@ -9,7 +9,7 @@ namespace Libra.Services.SmtpEmailSender
         private readonly string _smtpServer = "smtp.gmail.com";
         private readonly int _smtpPort = 587;
         private readonly string _smtpUsername = "clemsonnn22@gmail.com";
-        private readonly string _smtpPassword = "dtii xani pkol ypfa";
+        private readonly string _smtpPassword = "secret";
 
         public SmtpEmailSender()
         {
