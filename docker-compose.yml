@@ -23,6 +23,7 @@ services:
       dockerfile: OpenRemoteManage.GatewayAPI/Dockerfile
     ports:
       - 5131:5131
+    restart: always
     environment:
       Otel__Endpoint: http://otel-collector:4317
     networks:
